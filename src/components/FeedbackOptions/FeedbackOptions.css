@@ -1,0 +1,11 @@
+.btn {
+  cursor: pointer;
+}
+
+.btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.btn::first-letter {
+  text-transform: uppercase;
+}
