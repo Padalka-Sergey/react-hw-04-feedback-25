@@ -11,7 +11,7 @@ export const App = () => {
 
   const handleClickBtn = e => {
     const nameBtn = e.target.name;
-    console.log(nameBtn);
+
     switch (nameBtn) {
       case 'good':
         setGood(good => good + 1);
@@ -24,6 +24,7 @@ export const App = () => {
         break;
 
       default:
+        console.warn("Неверное имя 'nameBtn'");
         break;
     }
   };
